@@ -1,0 +1,23 @@
+function range (start, end, step){
+  let numbers=[]
+  if (start === undefined || end === undefined || step === undefined){
+    return numbers;
+  } else if (start > end){
+    return numbers;
+  } else if (step <= 0){
+    return numbers;
+  } else{
+    for (let i = start; i <= end; i=i+step){
+      numbers.push(i);
+    }
+  } return numbers;
+}
+
+console.log(range(0, 10, 2));
+console.log(range(10, 30, 5));
+console.log(range(-5, 2, 3));
+console.log(range(10, 2, 3));
+console.log(range(-5, -14, -3));
+console.log(range());
+
+
